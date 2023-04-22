@@ -1,4 +1,4 @@
-from ps3_template import *
+from ps3 import *
 
 #
 # Test code
