@@ -221,8 +221,6 @@ def is_valid_word(word, hand, word_list):
     
     return True if word in word_list or word == "EVIL" else False
 
-y = is_valid_word("part",{'r': 1, 'a': 3, 'p': 2, 't': 1, 'u':2},word_list)
-print(y)
 #
 # Problem #5: Playing a hand
 #
