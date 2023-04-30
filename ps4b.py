@@ -57,7 +57,7 @@ def get_story_string():
 
 ### END HELPER CODE ###
 
-WORDLIST_FILENAME = 'words.txt'
+WORDLIST_FILENAME = 'words_ps4.txt'
 
 # SuperClass
 class Message(object):
