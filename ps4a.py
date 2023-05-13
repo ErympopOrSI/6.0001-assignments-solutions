@@ -17,34 +17,19 @@ def shuffle(char, word):
 
 
 def permutations(word):
-    if len(word) == 1:
-        return [word]
+    if (len(word) == 1):
+        return [ word ]
     
-    total = list()
+    first_char = word[:1]
+    calc = permutations(word[1:])
 
-    last = len(word) - 1
-    s_last = last - 1
+    res = []
 
-    curr_str = word[s_last:]
-    last_str = word[last:]
+    for el in calc:
+        res.extend(shuffle(first_char, el))
+    res
+    return 
 
-    while s_last >= 0:
-        first = curr_str[0]
-        if not len(total):
-            total.extend(shuffle(first, last_str))
-        else:
-            temp = total[::]
-            total = list()
-
-            for t in temp:
-                total.extend(shuffle(first, t))
-
-        
-        last -= 1
-        s_last = last - 1
-        curr_str = word[s_last:]
-
-    return list(set(total))
 
 def get_permutations(sequence):
     '''
@@ -69,14 +54,14 @@ def get_permutations(sequence):
     return permutations(sequence)
 
 if __name__ == '__main__':
-   #EXAMPLE
-#    example_input = 'abc'
-#    print('Input:', example_input)
-#    print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
-#    print('Actual Output:', get_permutations(example_input))
+#    #EXAMPLE
+    example_input = 'abc'
+    print('Input:', example_input)
+    print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
+    print('Actual Output:', get_permutations(example_input))
     
-#    # Put three example test cases here (for your sanity, limit your inputs
-#    to be three characters or fewer as you will have n! permutations for a 
-#    sequence of length n)
+# #    # Put three example test cases here (for your sanity, limit your inputs
+# #    to be three characters or fewer as you will have n! permutations for a 
+# #    sequence of length n)
+    
     pass
-
