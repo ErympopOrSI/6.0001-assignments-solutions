@@ -1,7 +1,7 @@
 # Problem Set 4A
-# Name: <your name here>
-# Collaborators:
-# Time Spent: x:xx
+# Name: Olawoyin Temidayo
+# Collaborators: none
+# Time Spent: 2 days or so...
 
 def shuffle(char, word):
     # the len of the char and word combines
@@ -27,8 +27,8 @@ def permutations(word):
 
     for el in calc:
         res.extend(shuffle(first_char, el))
-    res
-    return 
+    
+    return res
 
 
 def get_permutations(sequence):
