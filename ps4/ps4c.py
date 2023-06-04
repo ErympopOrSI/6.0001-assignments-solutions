@@ -51,7 +51,7 @@ def is_word(word_list, word):
 
 ### END HELPER CODE ###
 
-WORDLIST_FILENAME = 'words_ps4.txt'
+WORDLIST_FILENAME = 'words.txt'
 
 # you may find these constants helpful
 VOWELS_LOWER = 'aeiou'
